@@ -44,9 +44,8 @@ if  __name__ == "__main__":
             for line in myfile: 
                 obj = json.loads(line)
                 write_object_file(obj,vec,filename_out,sep=separator)
-        print("File {} converted to {} ".format(filename_in,filename_out))
-        
+        print("File {} converted to {} ".format(filename_in,filename_out))        
     else:
-        print("Correct usage: python {} filename.json".format(sys.argv[0]))            
+        print("Correct usage: python {} file_name.json".format(sys.argv[0]))            
 
 
